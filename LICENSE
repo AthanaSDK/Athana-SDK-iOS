@@ -1,0 +1,62 @@
+CWJoy Software License Agreement
+
+Effective Date: January 13, 2026
+
+Copyright (c) 2026 Hainan CWJoy Network Technology Co., Ltd. and its affiliates. All rights reserved.
+
+1. Agreement Confirmation and Acceptance (Acceptance of Terms)
+This License Agreement (hereinafter referred to as "this Agreement") is a legal agreement between you (an individual or a single legal entity, hereinafter referred to as "Licensee") and Hainan CWJoy Network Technology Co., Ltd. (hereinafter referred to as "CWJoy" or "Licensor") regarding the use of the software development kit (SDK), source code, library files, binary files, APIs, and related documentation (collectively referred to as the "Licensed Software") provided by CWJoy.
+
+By clicking "Agree," downloading, installing, copying, or otherwise using the Licensed Software, you indicate that you have read, understood, and agreed to be bound by all the terms of this Agreement. If you are signing this Agreement on behalf of an entity, you declare and warrant that you have the legal authority to bind that entity to this Agreement.
+
+2. Grant of License
+CWJoy grants Licensee a worldwide, limited, non-exclusive, non-transferable, non-sublicensable, and revocable license to permit Licensee to:
+
+Development Use: Install and use the Licensed Software on computer devices under Licensee's control solely for the purpose of developing applications compatible with CWJoy services.
+
+Compilation and Integration: Compile and link the Licensed Software as part of Licensee's application to generate binary-form "Compiled Output."
+
+Distribution Restriction: Distribute the "Compiled Output" integrated into Licensee's application to end-users only. Redistribution of the Licensed Software as a standalone development tool, middleware, or SDK is strictly prohibited.
+
+3. Prohibited Actions
+Licensee is strictly prohibited from performing the following operations:
+
+Reverse Engineering: Reverse engineer, decompile, disassemble the object code of the Licensed Software, or otherwise attempt to extract the source code.
+
+Code Disclosure: Upload any part of the Licensed Software (including source code or private APIs) to public repositories (such as GitHub, GitLab, etc.) or disclose it to any third party through any channel.
+
+Malicious Use: Use the Licensed Software to develop any programs involving illegal hijacking, data theft, fraud, or harm to the interests of CWJoy and its users.
+
+Trademark Removal: Remove, obscure, or modify copyright notices, trademarks, watermarks, or any ownership identifiers attached to the Licensed Software and its outputs.
+
+4. Intellectual Property and Ownership
+
+Ownership Reservation: All ownership, intellectual property rights, and trade secrets in the Licensed Software and its derivative works belong to CWJoy. This Agreement does not constitute a transfer of ownership of the Licensed Software.
+
+Feedback License: If Licensee provides CWJoy with any modification suggestions or feedback regarding the Licensed Software, CWJoy has the right to use such feedback permanently without payment of remuneration.
+
+5. Export Control and Compliance
+
+Export Control: Licensee warrants that its use and distribution of applications containing the Licensed Software comply with applicable export restrictions and trade sanction laws in China and globally (including the United States, the European Union, etc.).
+
+Compliance: Licensee shall ensure the compliance of its applications in all distribution regions worldwide, including but not limited to data privacy protection (e.g., GDPR, CCPA).
+
+6. Confidentiality and Digital Security
+The Licensed Software is considered highly confidential information of CWJoy. Licensee must implement protection measures at least equivalent to those used to protect its own core technology (and no less than a reasonable standard). In the event of any security breach or unauthorized access, Licensee must notify CWJoy within 24 hours.
+
+7. Disclaimer and Limitation of Liability
+
+"AS IS" Provision: The Licensed Software is provided "AS IS." CWJoy does not warrant that the software will be error-free or uninterrupted, nor does it provide any guarantees regarding fitness for a particular purpose.
+
+Liability Cap: To the maximum extent permitted by applicable law, CWJoy's cumulative liability arising from this Agreement shall under no circumstances exceed the total fees (if any) paid by Licensee to CWJoy for the specific Licensed Software. If provided free of charge, the liability limit is 100 US dollars or the equivalent in Renminbi.
+
+8. Termination
+If Licensee breaches any term of this Agreement, the license granted hereunder will terminate automatically. Upon termination, Licensee must immediately destroy all copies of the Licensed Software and related confidential materials.
+
+9. Governing Law and Dispute Resolution
+
+Governing Law: This Agreement shall be governed by the laws of the People's Republic of China.
+
+Jurisdiction: Any dispute arising from this Agreement shall be settled through friendly negotiation between the parties. If negotiation fails, either party may submit the dispute to the competent people's court in Hainan Province (the location of CWJoy) for litigation.
+
+Language Effectiveness: This Agreement may be provided in multiple language versions. In case of any conflict between different language versions, the Simplified Chinese version shall prevail.
