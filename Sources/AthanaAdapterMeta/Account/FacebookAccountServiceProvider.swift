@@ -57,7 +57,7 @@ public class FacebookAccountServiceProvider: AccountServiceProvider {
     }
     
     @MainActor
-    public func signInWith(_ signInType: String, extra: Dictionary<String, Any>?) async throws -> AccountInfo {
+    public func signInWith(_ signInType: String) async throws -> AccountInfo {
         
         let configuration = LoginConfiguration(
             permissions: ["email", "public_profile"],

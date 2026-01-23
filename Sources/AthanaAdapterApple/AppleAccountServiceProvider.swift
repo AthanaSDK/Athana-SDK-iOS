@@ -57,7 +57,7 @@ public class AppleAccountServiceProvider: AccountServiceProvider {
     }
     
     @MainActor
-    public func signInWith(_ signInType: String, extra: Dictionary<String, Any>? = nil) async throws -> AccountInfo {
+    public func signInWith(_ signInType: String) async throws -> AccountInfo {
         let controller = AppleSignInController()
         let result = try await withCheckedThrowingContinuation { continuation in
             controller.performRequests { result in

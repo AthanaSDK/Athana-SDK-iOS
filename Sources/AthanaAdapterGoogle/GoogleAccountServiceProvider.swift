@@ -69,7 +69,7 @@ public class GoogleAccountServiceProvider: AccountServiceProvider {
     }
 
     @MainActor
-    public func signInWith(_ signInType: String, extra: [String: Any]?) async throws -> AccountInfo {
+    public func signInWith(_ signInType: String) async throws -> AccountInfo {
 
         return try await withCheckedThrowingContinuation { continuation in
             DispatchQueue.main.async {

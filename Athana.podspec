@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Athana'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Athana SDK'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
