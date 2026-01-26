@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AthanaAdapterGoogle'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Athana SDK - Adapter - Google'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = ios_deployment_target
   s.source_files = 'Sources/AthanaAdapterGoogle/**/*.swift'
   s.framework = 'Foundation'
-  s.dependency 'AthanaCore', '~> 1.0.1'
+  s.dependency 'AthanaCore', '~> 1.0.2'
   s.dependency 'GoogleSignIn', '>= 7.0.0'
   s.swift_versions = ['5.0']
 

@@ -8,7 +8,9 @@ class CommonAdListener: NSObject, MAAdDelegate {
     private let maxRetryAttempt: Int
     private let reload: (() -> Void)?
     private let onHidden: (() -> Void)?
-    private var retryAttempt = 0.0
+    public var retryAttempt = 0.0
+    
+    private var preloadAd: ProxyAd? = nil
     
     public var listener: AdServiceListener? = nil
     
@@ -22,9 +24,19 @@ class CommonAdListener: NSObject, MAAdDelegate {
         self.onHidden = onHidden
     }
     
+    func onPreLoaded() {
+        if let ad = preloadAd {
+            listener?.onLoaded(ad: ad)
+        }
+    }
+    
     func didLoad(_ ad: MAAd) {
         retryAttempt = 0.0
-        listener?.onLoaded(ad: ad.toProxyAd())
+        let proxyAd = ad.toProxyAd()
+        listener?.onLoaded(ad: proxyAd)
+        if (listener == nil) {
+            preloadAd = proxyAd
+        }
     }
 
     func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
@@ -64,7 +76,9 @@ class RewardedAdListener: NSObject, MARewardedAdDelegate {
     private let maxRetryAttempt: Int
     private let reload: (() -> Void)?
     private let onHidden: (() -> Void)?
-    private var retryAttempt = 0.0
+    public var retryAttempt = 0.0
+    
+    private var preloadAd: ProxyAd? = nil
     
     public var listener: AdServiceListener? = nil
     
@@ -76,13 +90,23 @@ class RewardedAdListener: NSObject, MARewardedAdDelegate {
         self.onHidden = onHidden
     }
     
+    func onPreLoaded() {
+        if let ad = preloadAd {
+            listener?.onLoaded(ad: ad)
+        }
+    }
+    
     func didRewardUser(for ad: MAAd, with reward: MAReward) {
         listener?.onRewarded(ad: ad.toProxyAd())
     }
 
     func didLoad(_ ad: MAAd) {
         retryAttempt = 0.0
-        listener?.onLoaded(ad: ad.toProxyAd())
+        let proxyAd = ad.toProxyAd()
+        listener?.onLoaded(ad: proxyAd)
+        if (listener == nil) {
+            preloadAd = proxyAd
+        }
     }
 
     func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: String, withError error: MAError) {
