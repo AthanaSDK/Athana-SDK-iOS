@@ -109,6 +109,7 @@ class AppleSignInController: NSObject, ASAuthorizationControllerDelegate {
                 signInType: SignInType.APPLE.name,
                 triOpenId: appleIDCredential.user,
                 triAccessToken: String(data: appleIDCredential.identityToken!, encoding: .utf8),
+                triNonce: nil,
                 userProperty: UserProperty(
                     nickname: appleIDCredential.fullName?.givenName,
                     email: appleIDCredential.email,

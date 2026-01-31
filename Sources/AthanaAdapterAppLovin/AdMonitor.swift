@@ -56,8 +56,8 @@ class CommonAdListener: NSObject, MAAdDelegate {
     }
 
     func didHide(_ ad: MAAd) {
-        onHidden?()
         listener?.onClosed(ad: ad.toProxyAd())
+        onHidden?()
     }
 
     func didClick(_ ad: MAAd) {
@@ -126,8 +126,8 @@ class RewardedAdListener: NSObject, MARewardedAdDelegate {
     }
 
     func didHide(_ ad: MAAd) {
-        onHidden?()
         listener?.onClosed(ad: ad.toProxyAd())
+        onHidden?()
     }
 
     func didClick(_ ad: MAAd) {

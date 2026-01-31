@@ -52,6 +52,7 @@ public class GoogleAccountServiceProvider: AccountServiceProvider {
             signInType: SignInType.GOOGLE.name,
             triOpenId: ((googleUser?.userID?.hashValue) != nil) == true ? googleUser?.userID! : "",
             triAccessToken: googleUser?.idToken?.tokenString,
+            triNonce: nil,
             userProperty: UserProperty(
                 nickname: profile?.name, email: profile?.email, phone: nil,
                 avatarUrl: profile?.imageURL(withDimension: 200)?.absoluteString, extra: nil)
@@ -102,6 +103,7 @@ public class GoogleAccountServiceProvider: AccountServiceProvider {
                         triOpenId: ((googleUser.userID?.hashValue) != nil) == true
                             ? googleUser.userID! : "",
                         triAccessToken: googleUser.idToken?.tokenString,
+                        triNonce: nil,
                         userProperty: UserProperty(
                             nickname: profile?.name, email: profile?.email, phone: nil,
                             avatarUrl: profile?.imageURL(withDimension: 200)?.absoluteString,
