@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AthanaAdapterFirebase'
-  s.version          = '1.0.2'
+  s.version          = '1.0.4'
   s.summary          = 'Athana SDK - Adapter - Firebase'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   
   s.source_files = 'Sources/AthanaAdapterFirebase/**/*.swift'
 
-  s.dependency 'AthanaCore', '~> 1.0.2'
+  s.dependency 'AthanaCore', '~> 1.0.4'
   s.dependency 'FirebaseAnalytics', '>= 11.4.0'
   s.dependency 'FirebaseCrashlytics', '>= 11.4.0'
   s.dependency 'FirebaseMessaging', '>= 11.4.0'

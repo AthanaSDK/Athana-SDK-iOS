@@ -70,7 +70,7 @@ public class AppsFlyerConversionServiceProvider: ConversionServiceProvider {
         afSdk.appleAppID = providerConfig.appId
         afSdk.deepLinkDelegate = afDLDelegate
         afSdk.delegate = afGCDDelegate
-        afSdk.waitForATTUserAuthorization(timeoutInterval: 60)
+        afSdk.waitForATTUserAuthorization(timeoutInterval: 20)
         LoggingService.shared.debug(tag: ConversionService.TAG, message: "[\(name)] initialized")
     }
     

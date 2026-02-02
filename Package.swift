@@ -32,13 +32,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AthanaCore",
-            url: "https://athana.inonesdk.com/ios/sdk/1.0.3/AthanaCore.xcframework.zip",
-            checksum: "a40b549dbf02779b62dcf75a842eab826c96b34b274bc9d2c0b4fda6407e55ee"
+            url: "https://athana.inonesdk.com/ios/sdk/1.0.4/AthanaCore.xcframework.zip",
+            checksum: "f09de561a716b46e6939b4130b51253b77839556556c8df0b839019ac4b6d7be"
         ),
         .binaryTarget(
             name: "AthanaSDK",
-            url: "https://athana.inonesdk.com/ios/sdk/1.0.3/AthanaSDK.xcframework.zip",
-            checksum: "f217a57b5d17e6965a27ebf6d9cef69c7592151c9e4011664ee4bb9586892ae1"
+            url: "https://athana.inonesdk.com/ios/sdk/1.0.4/AthanaSDK.xcframework.zip",
+            checksum: "7eb19aad041543912c0c3149056604565d0783bfebcb84fd249c0e157c51f347"
         ),
 
         .target(
