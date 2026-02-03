@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AthanaAdapterMeta'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'Athana SDK - Adapter - Meta'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = ios_deployment_target
   s.source_files = 'Sources/AthanaAdapterMeta/**/*.swift'
   s.framework = 'Foundation'
-  s.dependency 'AthanaCore', '~> 1.0.4'
+  s.dependency 'AthanaCore', '~> 1.0.5'
   s.dependency 'FBSDKCoreKit', '>= 18.0.0'
   s.dependency 'FBSDKLoginKit', '>= 18.0.0'
   s.swift_versions = ['5.0']
