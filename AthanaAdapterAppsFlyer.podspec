@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AthanaAdapterAppsFlyer'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'Athana SDK - Adapter - AppsFlyer'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   
   s.source_files = 'Sources/AthanaAdapterAppsFlyer/**/*.swift'
 
-  s.dependency 'AthanaCore', '~> 1.0.5'
+  s.dependency 'AthanaCore', '~> 1.0.6'
   s.dependency 'AppsFlyerFramework', '>= 6.17.0'
   s.static_framework = true
   s.swift_versions = ['5.0']
