@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'AthanaSDK'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'Athana SDK'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
-  s.source           = { :http => 'https://athana.inonesdk.com/ios/sdk/1.0.6/AthanaSDK.xcframework.zip' }
+  s.source           = { :http => 'https://athana.inonesdk.com/ios/sdk/1.0.7/AthanaSDK.xcframework.zip' }
   s.license          = 'CWJoy Software License Agreement', :file => 'LICENSE'
   
   ios_deployment_target = '13.0'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.framework = 'StoreKit'
   s.framework = 'SwiftUI'
   s.framework = 'UIKit'
-  s.dependency 'AthanaCore', '~> 1.0.6'
+  s.dependency 'AthanaCore', '~> 1.0.7'
   s.swift_versions = ['5.0']
 
 end
