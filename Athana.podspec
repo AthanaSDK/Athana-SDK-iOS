@@ -21,43 +21,43 @@ Pod::Spec.new do |s|
   s.subspec 'AthanaSDK' do |ss|
     ss.ios.deployment_target = ios_deployment_target
 
-    ss.dependency 'AthanaCore'
+    ss.dependency 'Athana/AthanaCore'
   end
 
   s.subspec 'AthanaAdapterApple' do |ss|
     ss.ios.deployment_target = ios_deployment_target
 
-    ss.dependency 'AthanaCore'
+    ss.dependency 'Athana/AthanaCore'
   end
 
   s.subspec 'AthanaAdapterAppLovin' do |ss|
     ss.ios.deployment_target = ios_deployment_target
 
-    ss.dependency 'AthanaCore'
+    ss.dependency 'Athana/AthanaCore'
   end
 
   s.subspec 'AthanaAdapterAppsFlyer' do |ss|
     ss.ios.deployment_target = ios_deployment_target
 
-    ss.dependency 'AthanaCore'
+    ss.dependency 'Athana/AthanaCore'
   end
 
   s.subspec 'AthanaAdapterFirebase' do |ss|
     ss.ios.deployment_target = ios_deployment_target
 
-    ss.dependency 'AthanaCore'
+    ss.dependency 'Athana/AthanaCore'
   end
 
   s.subspec 'AthanaAdapterGoogle' do |ss|
     ss.ios.deployment_target = ios_deployment_target
 
-    ss.dependency 'AthanaCore'
+    ss.dependency 'Athana/AthanaCore'
   end
 
   s.subspec 'AthanaAdapterMeta' do |ss|
     ss.ios.deployment_target = ios_deployment_target
 
-    ss.dependency 'AthanaCore'
+    ss.dependency 'Athana/AthanaCore'
   end
 
 end
