@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Athana'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'Athana SDK'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
@@ -15,49 +15,35 @@ Pod::Spec.new do |s|
   s.default_subspec = 'AthanaSDK'
 
   s.subspec 'AthanaCore' do |ss|
-    ss.ios.deployment_target = ios_deployment_target
+    ss.dependency 'AthanaCore', s.version.to_s
   end
 
   s.subspec 'AthanaSDK' do |ss|
-    ss.ios.deployment_target = ios_deployment_target
-
-    ss.dependency 'Athana/AthanaCore'
+    ss.dependency 'AthanaSDK', s.version.to_s
   end
 
   s.subspec 'AthanaAdapterApple' do |ss|
-    ss.ios.deployment_target = ios_deployment_target
-
-    ss.dependency 'Athana/AthanaCore'
+    ss.dependency 'AthanaAdapterApple', s.version.to_s
   end
 
   s.subspec 'AthanaAdapterAppLovin' do |ss|
-    ss.ios.deployment_target = ios_deployment_target
-
-    ss.dependency 'Athana/AthanaCore'
+    ss.dependency 'AthanaAdapterAppLovin', s.version.to_s
   end
 
   s.subspec 'AthanaAdapterAppsFlyer' do |ss|
-    ss.ios.deployment_target = ios_deployment_target
-
-    ss.dependency 'Athana/AthanaCore'
+    ss.dependency 'AthanaAdapterAppsFlyer', s.version.to_s
   end
 
   s.subspec 'AthanaAdapterFirebase' do |ss|
-    ss.ios.deployment_target = ios_deployment_target
-
-    ss.dependency 'Athana/AthanaCore'
+    ss.dependency 'AthanaAdapterFirebase', s.version.to_s
   end
 
   s.subspec 'AthanaAdapterGoogle' do |ss|
-    ss.ios.deployment_target = ios_deployment_target
-
-    ss.dependency 'Athana/AthanaCore'
+    ss.dependency 'AthanaAdapterGoogle', s.version.to_s
   end
 
   s.subspec 'AthanaAdapterMeta' do |ss|
-    ss.ios.deployment_target = ios_deployment_target
-
-    ss.dependency 'Athana/AthanaCore'
+    ss.dependency 'AthanaAdapterMeta', s.version.to_s
   end
 
 end
