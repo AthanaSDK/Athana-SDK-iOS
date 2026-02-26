@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
 
   # 发布二进制
   s.vendored_frameworks = 'AthanaSDK.xcframework'
+  s.static_framework = true
 
   s.framework = 'Foundation'
   s.framework = 'StoreKit'
