@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'Athana SDK'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
-  s.source           = { :http => 'https://athana.inonesdk.com/ios/sdk/1.0.8/AthanaSDK.xcframework.zip' }
+  s.source           = { :http => 'https://athana.inonesdk.com/ios/sdk/1.0.8/AthanaSDK.xcframework.zip', :type => 'zip' }
   s.license          = { :type => 'CWJoy Software License Agreement', :file => 'LICENSE' }
   
   ios_deployment_target = '13.0'
