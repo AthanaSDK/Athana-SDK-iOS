@@ -143,7 +143,6 @@ let package = Package(
             name: "AthanaAdapterMeta",
             dependencies: [
                 "AthanaCoreWrapper",
-                .product(name: "FacebookCore", package: "facebook-ios-sdk"),
                 .product(name: "FacebookLogin", package: "facebook-ios-sdk"),
             ],
             linkerSettings: [],

@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/AthanaAdapterMeta/**/*.swift'
   s.framework = 'Foundation'
   s.dependency 'AthanaCore', '~> 1.0.9'
-  s.dependency 'FBSDKCoreKit', '>= 18.0.0'
   s.dependency 'FBSDKLoginKit', '>= 18.0.0'
   s.swift_versions = ['5.0']
 
