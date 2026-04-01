@@ -1,4 +1,5 @@
 import Foundation
+import StoreKit
 import AthanaCore
 import FirebaseAnalytics
 
@@ -58,4 +59,8 @@ public class FirebaseEventServiceProvider: EventServiceProvider {
         events.forEach { logEvent($0) }
     }
 
+    @available(iOS 15.0, *)
+    public func logTransaction(_ transaction: Transaction) {
+        Analytics.logTransaction(transaction)
+    }
 }

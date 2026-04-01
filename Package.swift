@@ -12,6 +12,7 @@ let package = Package(
         .library(name: "AthanaAdapterAppsFlyer", targets: ["AthanaAdapterAppsFlyer"]),
         .library(name: "AthanaAdapterFirebase", type: .static, targets: ["AthanaAdapterFirebase"]),
         .library(name: "AthanaAdapterGoogle", targets: ["AthanaAdapterGoogle"]),
+        .library(name: "AthanaAdapterGameCenter", targets: ["AthanaAdapterGameCenter"]),
         .library(name: "AthanaAdapterMeta", targets: ["AthanaAdapterMeta"]),
     ],
     dependencies: [
@@ -32,13 +33,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AthanaCore",
-            url: "https://athana.inonesdk.com/ios/sdk/1.0.9/AthanaCore.xcframework.zip",
-            checksum: "c84dc5b8fe3fcdbbecf7d40fdae53c6e530cc586329c629276553567f5cbfb9d"
+            url: "https://athana.inonesdk.com/ios/sdk/1.1.0/AthanaCore.xcframework.zip",
+            checksum: "590838e5cf8decfa1a66c9a376933f340c231580796cbdb86951aee8b5d3eb75"
         ),
         .binaryTarget(
             name: "AthanaSDK",
-            url: "https://athana.inonesdk.com/ios/sdk/1.0.9/AthanaSDK.xcframework.zip",
-            checksum: "d111a967f8e032addd6d9449bf1fa6590db713553f7bddec622b109d4d33a8f9"
+            url: "https://athana.inonesdk.com/ios/sdk/1.1.0/AthanaSDK.xcframework.zip",
+            checksum: "9330977a65b84d98ef3fdf0664b8eb2f4d33e32e5b84d9ebb5760fbd23017ecd"
         ),
 
         .target(
@@ -137,6 +138,19 @@ let package = Package(
             name: "AthanaAdapterGoogleTests",
             dependencies: [
                 "AthanaAdapterGoogle"
+            ],
+        ),
+        .target(
+            name: "AthanaAdapterGameCenter",
+            dependencies: [
+                "AthanaCoreWrapper",
+            ],
+            linkerSettings: []
+        ),
+        .testTarget(
+            name: "AthanaAdapterGameCenterTests",
+            dependencies: [
+                "AthanaAdapterGameCenter"
             ],
         ),
         .target(

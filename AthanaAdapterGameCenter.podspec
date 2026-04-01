@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name             = 'AthanaAdapterAppsFlyer'
+  s.name             = 'AthanaAdapterGameCenter'
   s.version          = '1.1.0'
-  s.summary          = 'Athana SDK - Adapter - AppsFlyer'
+  s.summary          = 'Athana SDK - Adapter - GameCenter'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
   s.source           = { :git => 'https://github.com/AthanaSDK/Athana-SDK-iOS.git', :tag => s.version }
@@ -10,12 +10,10 @@ Pod::Spec.new do |s|
   ios_deployment_target = '13.0'
 
   s.ios.deployment_target = ios_deployment_target
-  
-  s.source_files = 'Sources/AthanaAdapterAppsFlyer/**/*.swift'
-
+  s.source_files = 'Sources/AthanaAdapterGameCenter/**/*.swift'
+  s.framework = 'Foundation'
+  s.framework = 'GameKit'
   s.dependency 'AthanaCore', '~> 1.1.0'
-  s.dependency 'AppsFlyerFramework', '>= 6.17.0'
-  s.static_framework = true
   s.swift_versions = ['5.0']
 
   s.test_spec 'swift-unit' do |swift_unit_tests|
@@ -23,8 +21,8 @@ Pod::Spec.new do |s|
       :ios => ios_deployment_target,
     }
     swift_unit_tests.source_files = [
-      'Tests/AthanaAdapterAppsFlyer/**/*.swift',
-      'Tests/AthanaAdapterAppsFlyer/**/*.h',
+      'Tests/AthanaAdapterGameCenter/**/*.swift',
+      'Tests/AthanaAdapterGameCenter/**/*.h',
     ]
   end
 end

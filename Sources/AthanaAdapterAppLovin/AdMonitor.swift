@@ -225,7 +225,7 @@ extension MAError {
             code: self.code.rawValue,
             message: self.message,
             networkErrorCode: self.mediatedNetworkErrorCode,
-            networkErrormessage: self.mediatedNetworkErrorMessage
+            networkErrorMessage: self.mediatedNetworkErrorMessage
         )
     }
 }
