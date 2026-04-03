@@ -145,7 +145,7 @@ public class GameCenterGamingServiceProvider: NSObject, GamingServiceProvider, G
         if let leaderboard = leaderboards.first {
             let scores = try await leaderboard.loadEntries(for: scope.toPlayerScope(), timeScope: timeScope.toTimeScope(), range: range)
             let list = scores.1
-            let hasMore = range.length > list.count
+            let hasMore = range.length == list.count
             return ScoreList(
                 scoreList: list.map { $0.toScoreData() }, hasMore: hasMore
             )
