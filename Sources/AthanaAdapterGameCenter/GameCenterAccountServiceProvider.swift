@@ -84,7 +84,7 @@ public class GameCenterAccountServiceProvider: AccountServiceProvider {
                 }
                 setAuthenticateHandler()
             }
-            return try await buildAccountInfo()
+            return try await buildAccountInfo(needSignature: true)
         } else {
             throw AthanaError(.SDK_REQUEST_ERROR, message: "This feature is only compatible with iOS 13.5 and above.")
         }
