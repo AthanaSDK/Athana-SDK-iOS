@@ -13,6 +13,13 @@ Pod::Spec.new do |s|
 
   # 发布二进制
   s.vendored_frameworks = 'AthanaSDK.xcframework'
+  s.resource_bundles = {
+    'AthanaSDK' => [
+      "AthanaSDK.xcframework/ios-arm64/*.framework/*.lproj",
+      "AthanaSDK.xcframework/ios-arm64/*.framework/*.car",
+      "AthanaSDK.xcframework/ios-arm64/*.framework/*.xcprivacy"
+    ]
+  }
   s.static_framework = true
 
   s.framework = 'Foundation'
