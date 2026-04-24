@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
       :ios => ios_deployment_target,
     }
     swift_unit_tests.source_files = [
-      'Tests/AthanaAdapterMeta/**/*.swift',
-      'Tests/AthanaAdapterMeta/**/*.h',
+      'Tests/AthanaAdapterMetaTests/**/*.swift',
+      'Tests/AthanaAdapterMetaTests/**/*.h',
     ]
   end
 end
