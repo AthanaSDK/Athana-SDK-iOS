@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AthanaAdapterGameCenter'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'Athana SDK - Adapter - GameCenter'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/AthanaAdapterGameCenter/**/*.swift'
   s.framework = 'Foundation'
   s.framework = 'GameKit'
-  s.dependency 'AthanaCore', '~> 1.1.1'
+  s.dependency 'AthanaCore', '~> 1.1.2'
   s.swift_versions = ['5.0']
 
   s.test_spec 'swift-unit' do |swift_unit_tests|
