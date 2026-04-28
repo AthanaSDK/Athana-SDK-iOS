@@ -56,7 +56,7 @@ public class GameCenterAccountServiceProvider: AccountServiceProvider {
         if #available(iOS 13.5, *) {
             if GKLocalPlayer.local.isAuthenticated {
                 notAuthenticated = false
-                return try await buildAccountInfo()
+                return try await buildAccountInfo(needSignature: true)
             }
             
             if notAuthenticated {
