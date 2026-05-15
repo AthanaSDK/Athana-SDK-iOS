@@ -5,15 +5,15 @@ let package = Package(
     name: "Athana-SDK-iOS",
     platforms: [.iOS(.v13)],
     products: [
-        .library(name: "AthanaCore", targets: ["AthanaCoreWrapper"]),
-        .library(name: "AthanaSDK", targets: ["AthanaSDK", "AthanaSDKWrapper"]),
-        .library(name: "AthanaAdapterApple", targets: ["AthanaAdapterApple"]),
-        .library(name: "AthanaAdapterAppLovin", targets: ["AthanaAdapterAppLovin"]),
-        .library(name: "AthanaAdapterAppsFlyer", targets: ["AthanaAdapterAppsFlyer"]),
-        .library(name: "AthanaAdapterFirebase", type: .static, targets: ["AthanaAdapterFirebase"]),
-        .library(name: "AthanaAdapterGoogle", targets: ["AthanaAdapterGoogle"]),
-        .library(name: "AthanaAdapterGameCenter", targets: ["AthanaAdapterGameCenter"]),
-        .library(name: "AthanaAdapterMeta", targets: ["AthanaAdapterMeta"]),
+        .library(name: "AthanaCore", targets: ["AthanaCore", "AthanaCoreWrapper"]),
+        .library(name: "AthanaSDK", targets: ["AthanaCore", "AthanaSDK", "AthanaSDKWrapper"]),
+        .library(name: "AthanaAdapterApple", targets: ["AthanaCore", "AthanaAdapterApple"]),
+        .library(name: "AthanaAdapterAppLovin", targets: ["AthanaCore", "AthanaAdapterAppLovin"]),
+        .library(name: "AthanaAdapterAppsFlyer", targets: ["AthanaCore", "AthanaAdapterAppsFlyer"]),
+        .library(name: "AthanaAdapterFirebase", targets: ["AthanaCore", "AthanaAdapterFirebase"]),
+        .library(name: "AthanaAdapterGoogle", targets: ["AthanaCore", "AthanaAdapterGoogle"]),
+        .library(name: "AthanaAdapterGameCenter", targets: ["AthanaCore", "AthanaAdapterGameCenter"]),
+        .library(name: "AthanaAdapterMeta", targets: ["AthanaCore", "AthanaAdapterMeta"]),
     ],
     dependencies: [
         .package(
@@ -54,11 +54,11 @@ let package = Package(
                 "AthanaCoreWrapper"
             ],
         ),
-        
+
         .target(
             name: "AthanaSDKWrapper",
             dependencies: [
-                "AthanaCoreWrapper"
+                "AthanaCore",
             ],
         ),
         .testTarget(
@@ -70,7 +70,7 @@ let package = Package(
         .target(
             name: "AthanaAdapterApple",
             dependencies: [
-                "AthanaCoreWrapper",
+                "AthanaCore",
             ],
             linkerSettings: []
         ),
@@ -83,7 +83,7 @@ let package = Package(
         .target(
             name: "AthanaAdapterAppLovin",
             dependencies: [
-                "AthanaCoreWrapper",
+                "AthanaCore",
                 .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
             ],
             linkerSettings: []
@@ -97,7 +97,7 @@ let package = Package(
         .target(
             name: "AthanaAdapterAppsFlyer",
             dependencies: [
-                "AthanaCoreWrapper",
+                "AthanaCore",
                 .product(name: "AppsFlyerLib", package: "AppsFlyerFramework"),
             ],
             linkerSettings: []
@@ -111,7 +111,7 @@ let package = Package(
         .target(
             name: "AthanaAdapterFirebase",
             dependencies: [
-                "AthanaCoreWrapper",
+                "AthanaCore",
                 .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
                 .product(name: "FirebaseCrashlytics", package: "firebase-ios-sdk"),
                 .product(name: "FirebaseMessaging", package: "firebase-ios-sdk"),
@@ -129,7 +129,7 @@ let package = Package(
         .target(
             name: "AthanaAdapterGoogle",
             dependencies: [
-                "AthanaCoreWrapper",
+                "AthanaCore",
                 .product(name: "GoogleSignIn", package: "GoogleSignIn-iOS"),
             ],
             linkerSettings: []
@@ -143,7 +143,7 @@ let package = Package(
         .target(
             name: "AthanaAdapterGameCenter",
             dependencies: [
-                "AthanaCoreWrapper",
+                "AthanaCore",
             ],
             linkerSettings: []
         ),
@@ -156,7 +156,7 @@ let package = Package(
         .target(
             name: "AthanaAdapterMeta",
             dependencies: [
-                "AthanaCoreWrapper",
+                "AthanaCore",
                 .product(name: "FacebookLogin", package: "facebook-ios-sdk"),
             ],
             linkerSettings: [],
