@@ -1,19 +1,19 @@
 Pod::Spec.new do |s|
   s.name             = 'AthanaAdapterAppsFlyer'
-  s.version          = '1.1.4'
+  s.version          = '2.0.0'
   s.summary          = 'Athana SDK - Adapter - AppsFlyer'
   s.homepage         = 'https://athana.inonesdk.com'
   s.authors          = 'CWJoy'
   s.source           = { :git => 'https://github.com/AthanaSDK/Athana-SDK-iOS.git', :tag => s.version }
   s.license          = { :type => 'CWJoy Software License Agreement', :file => 'LICENSE' }
 
-  ios_deployment_target = '13.0'
+  ios_deployment_target = '15.0'
 
   s.ios.deployment_target = ios_deployment_target
   
   s.source_files = 'Sources/AthanaAdapterAppsFlyer/**/*.swift'
 
-  s.dependency 'AthanaCore', '~> 1.1.4'
+  s.dependency 'AthanaCore', '~> 2.0.0'
   s.dependency 'AppsFlyerFramework', '>= 6.17.0'
   s.static_framework = true
   s.swift_versions = ['5.0']

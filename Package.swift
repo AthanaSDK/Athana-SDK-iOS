@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "Athana-SDK-iOS",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(name: "AthanaCore", targets: ["AthanaCore", "AthanaCoreWrapper"]),
         .library(name: "AthanaSDK", targets: ["AthanaCore", "AthanaSDK", "AthanaSDKWrapper"]),
@@ -21,25 +21,25 @@ let package = Package(
             .upToNextMajor(from: "13.2.0")),
         .package(
             url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git",
-            .upToNextMajor(from: "6.17.0")),
+            .upToNextMajor(from: "6.18.0")),
         .package(
-            url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "11.15.0")
+            url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "12.14.0")
         ),  // 12.+.0 要求 iOS 15
         .package(
             url: "https://github.com/facebook/facebook-ios-sdk.git", .upToNextMajor(from: "18.0.0")),
         .package(
-            url: "https://github.com/google/GoogleSignIn-iOS.git", .upToNextMajor(from: "7.0.0")),
+            url: "https://github.com/google/GoogleSignIn-iOS.git", .upToNextMajor(from: "9.1.0")),
     ],
     targets: [
         .binaryTarget(
             name: "AthanaCore",
-            url: "https://athana.inonesdk.com/ios/sdk/1.1.4/AthanaCore.xcframework.zip",
-            checksum: "98236b3fe05666060126d6711608866cd88211017b8ef8856d0371aba98427e3"
+            url: "https://athana.inonesdk.com/ios/sdk/2.0.0/AthanaCore.xcframework.zip",
+            checksum: "088c529f6f93cb18aa1b3b92df907331212cf8cb0c97074b8f1ad397c7a6db33"
         ),
         .binaryTarget(
             name: "AthanaSDK",
-            url: "https://athana.inonesdk.com/ios/sdk/1.1.4/AthanaSDK.xcframework.zip",
-            checksum: "242577915b326dd77147e2126cda631c7a3f00391396f0c89aaf5e40eaddee17"
+            url: "https://athana.inonesdk.com/ios/sdk/2.0.0/AthanaSDK.xcframework.zip",
+            checksum: "c1e27c764e8d8d4e2b1b304d674e558cdb007d908611db090ee9a4086d7f68ae"
         ),
 
         .target(
