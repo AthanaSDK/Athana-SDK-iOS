@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/AthanaAdapterGoogle/**/*.swift'
   s.framework = 'Foundation'
   s.dependency 'AthanaCore', '~> 2.0.0'
-  s.dependency 'GoogleSignIn', '>= 7.0.0'
+  s.dependency 'GoogleSignIn', '>= 9.0.0'
   s.swift_versions = ['5.0']
 
   s.test_spec 'swift-unit' do |swift_unit_tests|

@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/AthanaAdapterAppsFlyer/**/*.swift'
 
   s.dependency 'AthanaCore', '~> 2.0.0'
-  s.dependency 'AppsFlyerFramework', '>= 6.17.0'
+  s.dependency 'AppsFlyerFramework', '>= 6.18.0'
   s.static_framework = true
   s.swift_versions = ['5.0']
 

@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/AthanaAdapterFirebase/**/*.swift'
 
   s.dependency 'AthanaCore', '~> 2.0.0'
-  s.dependency 'FirebaseAnalytics', '>= 11.4.0'
-  s.dependency 'FirebaseCrashlytics', '>= 11.4.0'
-  s.dependency 'FirebaseMessaging', '>= 11.4.0'
+  s.dependency 'FirebaseAnalytics', '>= 12.14.0'
+  s.dependency 'FirebaseCrashlytics', '>= 12.14.0'
+  s.dependency 'FirebaseMessaging', '>= 12.4.0'
   s.static_framework = true
   s.swift_versions = ['5.0']
 
